@@ -22,12 +22,23 @@ class NotesViewController: UIViewController {
     @IBOutlet weak var noNotesField: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func addBtnTapped(_ sender: UIButton) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "new") as? NoteDetailViewController else {
+            return
+        }
+        vc.title = "New Note"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.completion = {noteTitle, note in
+            self.noNotesField.isHidden = true
+            self.tableView.isHidden = false
+            self.tableView.reloadData()
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        self.noNotesField.isHidden = true
-        self.tableView.isHidden = false
         tableView.reloadData()
     }
     

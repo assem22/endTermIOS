@@ -15,8 +15,12 @@ class NoteDetailViewController: UIViewController {
     @IBOutlet weak var noteBodyField: UITextView!
     
     var incomingData: Note? = nil
+    public var completion: ((String, String) -> Void)?
     
     @IBAction func saveNote(_ sender: UIBarButtonItem) {
+        if let text = noteTitleField.text, !text.isEmpty, !noteBodyField.text.isEmpty {
+            completion?(text, noteBodyField.text)
+        }
         if let goodNote = incomingData {
             try! realm.write{
                 goodNote.title = noteTitleField.text!

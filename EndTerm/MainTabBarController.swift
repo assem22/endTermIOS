@@ -19,7 +19,7 @@ class MainTabBarController: UITabBarController {
             return
         }
         for viewController in viewControllers {
-            if let viewController = viewController as? NotesViewController {
+            if let viewController = viewController as? ProfileViewController {
                 viewController.user = user
             }
         }
