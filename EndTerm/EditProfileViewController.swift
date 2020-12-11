@@ -65,9 +65,6 @@ class EditProfileViewController: UIViewController {
                 goodUser.profileImage = image
             }
         }
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController
-//        vc?.user = goodUser
-//        navigationController?.pushViewController(vc!, animated: true)
         navigationController?.popViewController(animated: true)
     }
     

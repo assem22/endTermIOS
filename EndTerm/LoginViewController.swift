@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class LoginViewController: UIViewController {
+class LoginViewController: ViewController {
     
     let realm = try! Realm()
     var users: Results<User>{
@@ -29,8 +29,6 @@ class LoginViewController: UIViewController {
                 if user.pasword == password {
                     print("WelComEeeeeeee")
                     self.performSegue(withIdentifier: "segue", sender: user)
-//                    let gotoNotes = storyboard?.instantiateViewController(withIdentifier: "NotesViewController")
-//                    navigationController?.pushViewController(gotoNotes!, animated: true)
                 }else{
                     print("incorrect password")
                 }
@@ -46,7 +44,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setBackgroundColor()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

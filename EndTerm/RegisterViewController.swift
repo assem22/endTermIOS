@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: ViewController {
     
     let realm = try! Realm()
 
@@ -38,7 +38,7 @@ class RegisterViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setBackgroundColor()
     }
 
 }

@@ -15,8 +15,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var profilePhotoField: UIImageView!
     @IBOutlet weak var nameField: UILabel!
     @IBOutlet weak var emailField: UILabel!
-    
-    
+
     
     @IBAction func editBtnTapped(_ sender: UIButton) {
         guard let vc = storyboard?.instantiateViewController(identifier: "EditProfileViewController") as? EditProfileViewController else {

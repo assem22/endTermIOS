@@ -135,7 +135,7 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-L8-Hmc">
                                         <rect key="frame" x="0.0" y="462.5" width="414" height="275"/>
-                                        <color key="backgroundColor" red="0.93263202909999998" green="0.95910114049999995" blue="0.82743227480000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ciA-wD-gfA">
                                         <rect key="frame" x="0.0" y="745.5" width="414" height="20.5"/>
@@ -169,7 +169,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NVN-A5-2nR"/>
-                        <color key="backgroundColor" red="0.93333131069999997" green="0.95488017800000002" blue="0.82761067150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NVN-A5-2nR" firstAttribute="trailing" secondItem="umx-Ls-vkG" secondAttribute="trailing" id="F54-5q-Ein"/>
                             <constraint firstItem="umx-Ls-vkG" firstAttribute="leading" secondItem="NVN-A5-2nR" secondAttribute="leading" id="GYe-4g-aWl"/>
@@ -385,7 +385,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RLF-tC-nqx"/>
-                        <color key="backgroundColor" red="0.93333131069999997" green="0.95488017800000002" blue="0.82761067150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rBV-e1-A0Q" firstAttribute="leading" secondItem="RLF-tC-nqx" secondAttribute="leading" id="4o5-vA-Yre"/>
                             <constraint firstItem="RLF-tC-nqx" firstAttribute="trailing" secondItem="rBV-e1-A0Q" secondAttribute="trailing" id="8rb-6d-OxV"/>
