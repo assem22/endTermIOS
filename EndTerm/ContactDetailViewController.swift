@@ -24,15 +24,19 @@ class ContactDetailViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.contactNameField.text = contact.name
-        self.contactPhoneField.text = contact.number
-        if let profImage = contact.image {
-            self.contactImageField.image = UIImage(data: profImage as Data)
-        }
+        viewLoadSetup()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         self.navigationController?.isNavigationBarHidden = false
+        viewLoadSetup()
+    }
+    func viewLoadSetup() {
+        self.contactNameField.text = contact.name
+        self.contactPhoneField.text = contact.number
+        if let profImage = contact.image {
+            self.contactImageField.image = UIImage(data: profImage as Data)
+        }
     }
 }
